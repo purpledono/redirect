@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Redirecting...</title>
 <script type="text/javascript">
-  // Script Monetag in-page push
+  // Jalankan script Monetag
   (function(s,u,z,p){
     s.src=u;
     s.setAttribute('data-zone',z);
@@ -13,18 +13,17 @@
     document.body.appendChild(s);
   })(document.createElement('script'),
     'https://otieu.com/pfe/current/tag.min.js',
-    '10176335',  // ← ganti dengan ID iklan Monetag lu
+    '10176335', // ID iklan Monetag kamu
     (new URLSearchParams(window.location.search)).get('id') || ''
   );
 
-  // Redirect ke tujuan setelah beberapa detik
+  // Redirect ke website utama sesudah 5 detik
   setTimeout(function(){
-    window.location.href = "https://kyoudaimanga.my.id"; // ← ubah ke tujuan akhir lu
-  }, 5000); // delay 5 detik (boleh diganti)
+    window.location.href = "https://kyoudaimanga.my.id"; // ubah sesuai tujuan kamu
+  }, 5000);
 </script>
 </head>
 <body>
-  <p>Redirecting... Please wait</p>
+  <p>Redirecting... please wait.</p>
 </body>
 </html>
-
